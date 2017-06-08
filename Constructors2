@@ -1,0 +1,51 @@
+class Android {
+	
+	private String name;
+	private String function;
+	private int yearBuilt;
+	private int salePrice;
+	private boolean used;
+	
+	public String getName() {
+		return name;
+	}
+	
+	public Android() {
+		this(true, "Altax", "Home Assistant", 2037, 62000);
+		
+	}
+	
+	public Android(boolean used, String name, String function, int yearBuilt, int salePrice) {
+		System.out.println("Constructor #1 is running.");
+		this.used = used;
+		this.name = name;
+		this.function = function;
+		this.yearBuilt = yearBuilt;
+		this.salePrice = salePrice;
+
+	}
+	
+	public Android (String name) {
+		this.name = name;
+	}
+	
+	public Object getInfo() {
+		return "Name: " + name + ".\nFunction: " + function + ".\nYear Built: " + yearBuilt + ".\nSale Price: " + salePrice + ".\nUsed: " + used;
+		
+	}
+}
+
+public class Constructors2 {
+
+	public static void main(String[] args) {
+		
+		Android android1 = new Android();
+		System.out.println(android1.getInfo());
+		
+		Android android2 = new Android("Bartholamu");
+		System.out.println("\n" + android2.getName());
+		
+
+	}
+
+}
