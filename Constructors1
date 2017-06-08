@@ -1,0 +1,35 @@
+
+class Dinosaur {
+	
+	private String speciesName;
+	private String livedYears;
+	
+	public String getLivedYears() {
+		return livedYears;
+	}
+	
+	public String getName() {
+		return speciesName;
+	}
+
+	public Dinosaur(String speciesName, String livedYears) {
+		this.speciesName = speciesName;
+		this.livedYears = livedYears;
+	}
+	
+}
+
+public class Constructors {
+
+	public static void main(String[] args) {
+		
+		Dinosaur dino1 = new Dinosaur("Albertasaurus", "71 Million Years Ago");
+		System.out.println(dino1.getName() + ". Lived " + dino1.getLivedYears());
+		
+		Dinosaur dino2 = new Dinosaur("Pterodactyl", "39 Million Years Ago");
+		System.out.println(dino2.getName() + ". Lived " + dino2.getLivedYears());
+		
+
+	}
+
+}
